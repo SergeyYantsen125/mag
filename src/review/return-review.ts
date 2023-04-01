@@ -1,7 +1,12 @@
 import { Prisma } from '@prisma/client';
+import {returnUserObjects} from "../user/return-user.objects";
 
-export const returnCategoryObjects: Prisma.CategorySelect = {
+export const returnReviewObjects: Prisma.ReviewSelect = {
+  user: {
+    select: returnUserObjects,
+  },
+  createdAt: true,
   id: true,
-  name: true,
-  slug: true,
+  text: true,
+  rating: true,
 };

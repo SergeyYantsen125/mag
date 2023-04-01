@@ -23,6 +23,7 @@ export class UserService {
             slug: true,
           },
         },
+        orders: true,
         ...selectObjects,
       },
     });

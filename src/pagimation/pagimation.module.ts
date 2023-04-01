@@ -4,6 +4,7 @@ import { PagimationController } from './pagimation.controller';
 
 @Module({
   controllers: [PagimationController],
-  providers: [PagimationService]
+  providers: [PagimationService],
+  exports: [PagimationService]
 })
 export class PagimationModule {}

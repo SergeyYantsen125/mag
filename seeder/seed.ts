@@ -35,7 +35,7 @@ const createdproduct = async (qun: number) => {
           create: {
             rating: faker.datatype.number({ min: 1, max: 5 }),
             text: faker.lorem.paragraph(),
-            userId: faker.datatype.number({ min: 5, max: 8 }),
+            userId: faker.datatype.number({ min: 1, max: 6 }),
           },
         },
       },
